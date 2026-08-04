@@ -1,0 +1,13 @@
+.background-numbers {
+    position: absolute;
+    top: 80px;
+    left: 43px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    pointer-events: none;
+    z-index: -1;
+    font-size: 11px;
+    color: #59779b;
+    font-family: "Space Grotesk", sans-serif;
+  }
