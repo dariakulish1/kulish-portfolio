@@ -4,19 +4,10 @@
     justify-content: space-between;
 }
 .about-container {
-  padding: 2rem;
+  padding: 2rem 4rem;
   margin: 0px;
   margin-left: 40px;
   margin-top: 5px;
-  &__job-position {
-    font-size: 15px;
-    color: #5ba2e3;
-  }
-  &__title-name {
-    font-size: 55px;
-    font-weight: 700;
-    color: #C7DEF6;
-  }
   &__description-container {
     position: relative;
     margin-top: 20px;

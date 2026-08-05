@@ -6,24 +6,15 @@ import { TypeAnimation } from "react-type-animation";
 import TextIndicator from "../components/TextIndicator/TextIndicator";
 import Lottie from "lottie-react";
 import programmingComputer from "../images/programmingComputer.json";
+import CommentText from "../components/CommentText/CommentText";
+import AnimatedTitleText from "../components/AnimatedTitleText/AnimatedTitleText";
 
 export default function AboutPage() {
   return (
     <div className="about-page">
       <div className="about-container">
-      <p className="about-container__job-position">
-        &#47; &#47; front-end (react) developer
-      </p>
-      <TypeAnimation
-        sequence={[
-          'Daria Kulish',
-          1500,
-        ]}
-        wrapper="span"
-        cursor={false}
-        repeat={0}
-        className="about-container__title-name"
-      />
+      <CommentText text="front-end (react) developer" />
+      <AnimatedTitleText text="Daria Kulish" />
       <div className="about-container__description-container">
         <div className="about-container__text-marker" />
         <p className="about-container__description-text">
