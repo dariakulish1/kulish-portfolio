@@ -155,7 +155,7 @@ const tagsUrls = [
   },
   {
     tag: "My Portfolio Website",
-    url: "https://dariakulish1.github.io/about-project/"
+    url: "https://kulish-portfolio.vercel.app/about-me"
   },
   {
     tag: "CreateIT",
