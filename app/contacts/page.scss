@@ -1,0 +1,99 @@
+.contacts-container {
+  padding: 2rem 4rem;
+  margin: 0px;
+  margin-left: 40px;
+  margin-top: 5px;
+  &__contact-form-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    gap: 30px;
+    width: 100%;
+  }
+  &__description-container {
+    position: relative;
+    margin-top: 20px;
+    max-width: 600px;
+  }
+  &__description-text {
+    font-size: 16px;
+    color: #AFB8C3;
+    max-width: 600px;
+    margin-top: 20px;
+    z-index: 10;
+    position: relative;
+  }
+  &__text-marker {
+    width: 160px;
+    height: 16px;
+    z-index: 1;
+    background-color: #a4c26a;
+    position: absolute;
+    top: 6px;
+    left: 254px;
+  }
+  &__contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  &__contact-info-box {
+    background-color: #185E9F;
+    border: 1px solid rgb(86, 147, 203);
+    padding: 15px;
+    border-radius: 8px;
+    color: #C7DEF6;
+    width: 100%;
+  }
+  &__contact-form-box {
+    background-color: #185E9F;
+    border: 1px solid rgb(86, 147, 203);
+    padding: 25px 30px;
+    border-radius: 8px;
+    color: #C7DEF6;
+    width: 100%;
+    max-width: 700px;
+  }
+  &__form-input, &__form-textarea {
+    background-color: #0c3963;
+    border: 1px solid rgb(68, 126, 179);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #C7DEF6;
+  }
+  &__form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  &__send-form-btn {
+    background: #C7DEF6;
+    border: 1px solid rgb(68, 126, 179);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #0c3963;
+    box-shadow: 0px 0px 8px #c3d4e7;
+    transition: 0.3s ease;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 15px #c3d4e7;
+        scale: 1.02;
+    }
+  }
+  &__contact-info-btn {
+    background: #256fb5;
+    border: 1px solid rgb(96, 152, 204);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
