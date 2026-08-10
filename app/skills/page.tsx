@@ -3,6 +3,7 @@
 import { AnimatedSection } from "../components/AnimatedSection/AnimatedSection";
 import AnimatedTitleText from "../components/AnimatedTitleText/AnimatedTitleText";
 import CommentText from "../components/CommentText/CommentText";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import "./page.scss";
 import { TypeAnimation } from "react-type-animation";
 
@@ -172,15 +173,17 @@ const tagsUrls = [
 ]
 
 export default function SkillsPage() {
+  const isMobile = useMediaQuery('(max-width: 767px)');
+
   return (
       <div className="skills-container">
       <CommentText text="what I build with" />
       <AnimatedTitleText text="Skills & Tools"/>
       <div className="skills-container__description-container">
-        <div className="skills-container__text-marker" />
+        {!isMobile && <div className="skills-container__text-marker" />}
         <p className="skills-container__description-text">
           A working set of tools rather than a scored list — 
-          <span style={{ color: "#09131E" }}>no invented percentages,</span> just what I actually reach for 
+          <span style={{ color: isMobile ? "#a4c26a" : "#09131E" }}> no invented percentages,</span> just what I actually reach for 
           day to day, grouped by the projects where they are employed.</p>
       </div>
       <h1 className="skills-container__toolbox-title">Toolbox</h1>

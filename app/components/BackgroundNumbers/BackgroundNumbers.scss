@@ -10,4 +10,8 @@
     font-size: 11px;
     color: #59779b;
     font-family: "Space Grotesk", sans-serif;
+    @media (max-width: 767px) {
+      top: 60px;
+      left: 13px;
+    }
   }

@@ -62,4 +62,32 @@
         gap: 6px;
         margin-top: 5px;
     }
+    @media (max-width: 767px) {
+        margin: 15px 35px;
+        padding: 0px;
+        &__project-box {
+            padding: 15px;
+            gap: 15px;
+        }
+        &__project-header {
+            flex-direction: column;
+            align-items: start;
+            justify-content: left;
+        }
+        &__project-tags {
+            flex-direction: column;
+            gap: 5px
+        }
+        &__project-stack-container {
+            flex-direction: row;
+            align-items: start;
+            justify-content: left;
+        }
+        &__project-stack-icons {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
 }

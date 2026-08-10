@@ -1,4 +1,7 @@
 .comment-text {
     font-size: 15px;
     color: #5ba2e3;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
 }

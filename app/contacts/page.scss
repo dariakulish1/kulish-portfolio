@@ -96,4 +96,18 @@
     justify-content: center;
     gap: 10px;
   }
+  @media (max-width: 767px) {
+    margin: 15px 35px;
+    padding: 0px;
+    &__contact-form-info {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__contact-form-box {
+      padding: 15px 15px;
+      border-radius: 8px;
+      color: #C7DEF6;
+      width: 100%;
+      max-width: 700px;
+    }
+  }
 }

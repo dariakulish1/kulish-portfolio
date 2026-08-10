@@ -8,17 +8,21 @@ import Lottie from "lottie-react";
 import programmingComputer from "../images/programmingComputer.json";
 import CommentText from "../components/CommentText/CommentText";
 import AnimatedTitleText from "../components/AnimatedTitleText/AnimatedTitleText";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 export default function AboutPage() {
+  const isMobile = useMediaQuery('(max-width: 767px)');
+
   return (
     <div className="about-page">
       <div className="about-container">
       <CommentText text="front-end (react) developer" />
       <AnimatedTitleText text="Daria Kulish" />
+      {isMobile && <Lottie style={{width: "250px"}} animationData={programmingComputer} loop={true} />}
       <div className="about-container__description-container">
-        <div className="about-container__text-marker" />
+        {!isMobile && <div className="about-container__text-marker" />}
         <p className="about-container__description-text">
-          I build <span style={{ color: "#09131E" }}>responsive, production-ready interfaces</span> — most recently
+          I build <span style={{ color: isMobile ? "#a4c26a" :"#09131E" }}>responsive, production-ready interfaces</span> — most recently
           for an AI-powered platform that turns a prompt into a full course, 
           presentation or quiz. I care about the parts of front-end work closest 
           to the user: clean layouts, fast pages, and interactions that feel obvious. 
@@ -56,7 +60,7 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
-    <Lottie animationData={programmingComputer} loop={true} />
+    {!isMobile && <Lottie animationData={programmingComputer} loop={true} />}
     </div>
   );
 }

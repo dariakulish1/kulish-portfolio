@@ -6,6 +6,7 @@ import CommentText from "../components/CommentText/CommentText";
 import "./page.scss";
 import { contactSchema } from "../schemas/contactSchema";
 import { Copy, ExternalLink } from "lucide-react";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const contactInfo = [
     {
@@ -35,6 +36,7 @@ const contactInfo = [
 ]
 
 export default function ContactsPage() {
+    const isMobile = useMediaQuery('(max-width: 767px)');
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -109,12 +111,11 @@ export default function ContactsPage() {
             <CommentText text="let's work together" />
             <AnimatedTitleText text="Contacts" />
             <div className="contacts-container__description-container">
-                <div className="contacts-container__text-marker" />
+                {!isMobile && <div className="contacts-container__text-marker" />}
                 <p className="contacts-container__description-text">
-                Fill in the form below and it goes <span style={{ color: "#09131E" }}>straight to my inbox</span> — no need to open your own email client. Prefer something more direct? My email, Telegram and GitHub are on the right, all one click or copy away.</p>
+                Fill in the form below and it goes <span style={{ color: isMobile ? "#a4c26a" : "#09131E" }}>straight to my inbox</span> — no need to open your own email client. Prefer something more direct? My email, Telegram and GitHub are on the right, all one click or copy away.</p>
             </div>
             <div className="contacts-container__contact-form-info"> 
-                
                 <div className="w-full">
                     <form onSubmit={handleSubmit} className="contacts-container__contact-form-box">
                         <p className="text-[19px] font-bold mb-2">Send me a message</p>
@@ -194,10 +195,10 @@ export default function ContactsPage() {
                                 <button onClick={async () => {
                                     await navigator.clipboard.writeText(contact.socialMedia === "Email" ? "dashaklsh1507@gmail.com" : "@cooleshd");
                                     }} 
-                                    className="contacts-container__contact-info-btn"><span>{contact.buttonText}</span><Copy size={15} /></button>
+                                    className="contacts-container__contact-info-btn">{!isMobile && <span>{contact.buttonText}</span>}<Copy size={15} /></button>
                                 :
                                 <a href={contact.socialMedia === "GitHub" ? "https://github.com/dariakulish1" : "https://www.linkedin.com/in/daria-kulish-5a4a66257/"} className="contacts-container__contact-info-btn">
-                                    <span>{contact.buttonText}</span>
+                                    {!isMobile && <span>{contact.buttonText}</span>}
                                     <ExternalLink size={15} />
                                 </a>}
                             </div>

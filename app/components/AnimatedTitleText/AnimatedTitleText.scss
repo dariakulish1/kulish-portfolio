@@ -2,4 +2,7 @@
     font-size: 55px;
     font-weight: 700;
     color: #C7DEF6;
+    @media (max-width: 767px) {
+        font-size: 35px;
+    }
   }
