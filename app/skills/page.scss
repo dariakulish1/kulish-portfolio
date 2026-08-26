@@ -79,6 +79,11 @@
     color: #abd1f6;
     text-decoration: none;
     transition: color 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
     &:hover {
       color: #a4c26a;
     }

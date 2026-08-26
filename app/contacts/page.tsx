@@ -112,8 +112,11 @@ export default function ContactsPage() {
             <AnimatedTitleText text="Contacts" />
             <div className="contacts-container__description-container">
                 {!isMobile && <div className="contacts-container__text-marker" />}
-                <p className="contacts-container__description-text">
-                Fill in the form below and it goes <span style={{ color: isMobile ? "#a4c26a" : "#09131E" }}>straight to my inbox</span> — no need to open your own email client. Prefer something more direct? My email, Telegram and GitHub are on the right, all one click or copy away.</p>
+                {isMobile ? <p>
+                Fill in the form below and it goes <span style={{ color: isMobile ? "#a4c26a" : "#09131E" }}>straight to my inbox</span> — no need to open your own email client. Prefer something more direct? My email, Telegram and GitHub are below the contact form, all one click or copy away.
+                </p> : <p className="contacts-container__description-text">
+                Fill in the form below and it goes <span style={{ color: isMobile ? "#a4c26a" : "#09131E" }}>straight to my inbox</span> — no need to open your own email client. Prefer something more direct? My email, Telegram and GitHub are on the right, all one click or copy away.
+                </p>}
             </div>
             <div className="contacts-container__contact-form-info"> 
                 <div className="w-full">

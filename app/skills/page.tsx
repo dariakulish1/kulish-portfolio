@@ -1,11 +1,11 @@
 "use client";
 
+import { ExternalLink } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection/AnimatedSection";
 import AnimatedTitleText from "../components/AnimatedTitleText/AnimatedTitleText";
 import CommentText from "../components/CommentText/CommentText";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import "./page.scss";
-import { TypeAnimation } from "react-type-animation";
 
 const skills = [
   {
@@ -58,6 +58,11 @@ const skills = [
   },
   {
     id: 9,
+    title: "Mongodb",
+    tags: ["CreateIT"],
+    icon: <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><linearGradient id="a" x1="-659.847" y1="839.557" x2="-666.491" y2="839.603" gradientTransform="matrix(-0.977, -0.323, -0.29, 0.877, -378.211, -928.733)" gradientUnits="userSpaceOnUse"><stop offset="0.231" stopColor="#999875"></stop><stop offset="0.563" stopColor="#9b9977"></stop><stop offset="0.683" stopColor="#a09f7e"></stop><stop offset="0.768" stopColor="#a9a889"></stop><stop offset="0.837" stopColor="#b7b69a"></stop><stop offset="0.896" stopColor="#c9c7b0"></stop><stop offset="0.948" stopColor="#deddcb"></stop><stop offset="0.994" stopColor="#f8f6eb"></stop><stop offset="1" stopColor="#fbf9ef"></stop></linearGradient><linearGradient id="b" x1="-658.764" y1="827.72" x2="-668.32" y2="844.273" gradientTransform="matrix(-0.977, -0.323, -0.29, 0.877, -378.211, -928.733)" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#48a547"></stop><stop offset="1" stopColor="#3f9143"></stop></linearGradient><linearGradient id="c" x1="-658.088" y1="839.78" x2="-664.862" y2="835.229" gradientTransform="matrix(-0.977, -0.323, -0.29, 0.877, -378.211, -928.733)" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#41a247"></stop><stop offset="0.352" stopColor="#4ba74b"></stop><stop offset="0.956" stopColor="#67b554"></stop><stop offset="1" stopColor="#69b655"></stop></linearGradient></defs><title>folder_type_mongodb_opened</title><path d="M27.4,5.5H18.2L16.1,9.7H4.3V26.5H29.5V5.5Zm0,18.7H6.6V11.8H27.4Zm0-14.5H19.2l1-2.1h7.1V9.7Zm-1.7,4H.5L4.3,26.5H29.5Z" fill="#78c47c"></path><path d="M26.775,31l-.563-.187s.072-2.851-.956-3.05c-.678-.786.1-33.556,2.567-.112a2.033,2.033,0,0,0-1,1.142A10.575,10.575,0,0,0,26.775,31Z" fill="url(#a)"></path><path d="M27.079,28.247a9.917,9.917,0,0,0,3.748-9.919c-1.1-4.864-3.711-6.463-3.992-7.073a7.321,7.321,0,0,1-.619-1.2l.208,13.552S25.993,27.748,27.079,28.247Z" fill="url(#b)"></path><path d="M25.925,28.427S21.334,25.3,21.6,19.769a11.656,11.656,0,0,1,4.139-8.736A1.3,1.3,0,0,0,26.194,10c.286.615.239,9.182.269,10.184C26.58,24.082,26.247,27.691,25.925,28.427Z" fill="url(#c)"></path></g></svg>,  },
+  {
+    id: 10,
     title: "HTML5/CSS3",
     tags: ["Movie App", "Weather App", "My Portfolio Website", "CreateIT", "BrainlySolution", "ContentBuilder"],
     icon: <svg viewBox="0 0 311 274" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,25 +75,25 @@ const skills = [
       </svg>
   },
   {
-    id: 10,
+    id: 11,
     title: "SCSS",
     tags: ["Movie App", "Weather App", "My Portfolio Website", "CreateIT", "BrainlySolution", "ContentBuilder"],
     icon: <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_scss2</title><path d="M16,2A14,14,0,1,1,2,16,14,14,0,0,1,16,2Z" fill="#c69" fillRule="evenodd"></path><path d="M24.782,7.992c-.634-2.486-4.757-3.3-8.659-1.918A19.605,19.605,0,0,0,9.479,9.885c-2.149,2.01-2.492,3.76-2.351,4.491.5,2.58,4.033,4.266,5.486,5.517V19.9c-.428.211-3.564,1.8-4.3,3.42-.774,1.712.123,2.94.718,3.105A4.4,4.4,0,0,0,13.78,24.5a4.824,4.824,0,0,0,.472-4.288,5.639,5.639,0,0,1,2.143-.123c2.456.287,2.938,1.82,2.846,2.462a1.62,1.62,0,0,1-.779,1.1c-.172.107-.225.143-.21.223.021.115.1.111.247.086a1.915,1.915,0,0,0,1.336-1.707c.059-1.5-1.382-3.186-3.934-3.143a6.736,6.736,0,0,0-2.189.3c-.035-.04-.071-.08-.108-.12-1.578-1.683-4.494-2.874-4.371-5.137.045-.823.331-2.989,5.6-5.617,4.32-2.153,7.778-1.56,8.376-.247.854,1.876-1.848,5.361-6.334,5.864a3.37,3.37,0,0,1-2.833-.718c-.236-.26-.271-.271-.359-.223-.143.079-.052.309,0,.445a2.659,2.659,0,0,0,1.621,1.274,8.592,8.592,0,0,0,5.258-.52C23.283,13.362,25.405,10.437,24.782,7.992ZM13.218,20.663a3.584,3.584,0,0,1-.029,2.092q-.035.106-.077.21t-.091.2a3.911,3.911,0,0,1-.647.943c-.813.887-1.95,1.223-2.437.94-.526-.305-.263-1.556.68-2.553a9.478,9.478,0,0,1,2.474-1.762l0,0Z" fill="#fff"></path></g></svg>
   },
   {
-    id: 11,
+    id: 12,
     title: "Tailwind",
     tags: ["My Portfolio Website", "ContentBuilder"],
     icon: <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" fill="#44a8b3"></path></g></svg>
   },
   {
-    id: 12,
+    id: 13,
     title: "Material UI",
     tags: ["BrainlySolution", "ContentBuilder"],
     icon: <svg viewBox="0 -26 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon fill="#00B0FF" points="0 110.848 0 0 96 55.424 96 92.3733333 32 55.424 32 129.322667"> </polygon> <polygon fill="#0081CB" points="96 55.424 192 0 192 110.848 128 147.797333 96 129.322667 160 92.3733333 160 55.424 96 92.3733333"> </polygon> <polygon fill="#00B0FF" points="96 129.322667 96 166.272 160 203.221333 160 166.272"> </polygon> <path d="M160,203.221333 L256,147.797333 L256,73.8986667 L224,92.3733333 L224,129.322667 L160,166.272 L160,203.221333 Z M224,55.424 L224,18.4746667 L256,5.68434189e-14 L256,36.9493333 L224,55.424 Z" fill="#0081CB"> </path> </g> </g></svg>
   },
   {
-    id: 13,
+    id: 14,
     title: "shadcn/ui",
     tags: ["My Portfolio Website", "ContentBuilder"],
     icon: <svg viewBox="0 0 573 576" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +102,7 @@ const skills = [
       </svg>
   },
   {
-    id: 14,
+    id: 15,
     title: "Firebase",
     tags: ["BrainlySolution"],
     icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="75.37 20.86 442.36 555.61">
@@ -108,37 +113,37 @@ const skills = [
       </svg>
   },
   {
-    id: 15,
+    id: 16,
     title: "Redux",
     tags: ["Movie App", "CreateIT", "BrainlySolution", "ContentBuilder"],
     icon: <svg fill="#000000" viewBox="0 -0.5 25 25" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m17.54 16.745c.893-.089 1.585-.837 1.585-1.746 0-.036-.001-.072-.003-.108v.005c-.047-.963-.834-1.726-1.801-1.736h-.065c-.968.036-1.739.829-1.739 1.802 0 .022 0 .044.001.067v-.003c.026.473.22.897.522 1.217l-.001-.001c-1.187 2.214-3.001 3.96-5.204 5.031l-.069.03c-1.192.66-2.614 1.048-4.127 1.048-.383 0-.761-.025-1.13-.073l.044.005c-1.361-.131-2.533-.844-3.277-1.884l-.009-.014c-.537-.755-.858-1.695-.858-2.711 0-.837.218-1.623.601-2.305l-.012.024c.547-1.036 1.293-1.898 2.194-2.562l.021-.014c-.171-.453-.324-.999-.432-1.56l-.011-.066c-4.683 3.349-4.208 7.93-2.786 10.095 1.243 1.586 3.159 2.596 5.311 2.596.098 0 .195-.002.292-.006h-.014c.035.001.077.001.119.001.647 0 1.276-.075 1.88-.216l-.056.011c4.008-.734 7.29-3.317 8.974-6.814l.032-.074z"></path><path d="m23.18 12.799c-2.403-2.74-5.91-4.46-9.82-4.46-.119 0-.239.002-.357.005h.018-.538c-.283-.567-.86-.95-1.526-.95-.02 0-.039 0-.059.001h.003-.039c-.966.014-1.744.8-1.744 1.768 0 .029.001.057.002.085v-.004c.045.963.832 1.728 1.8 1.738h.079c.714-.028 1.317-.472 1.577-1.094l.004-.012h.585c2.554.003 4.924.787 6.884 2.128l-.042-.027c1.531.98 2.713 2.388 3.392 4.055l.021.058c.26.542.411 1.178.411 1.849 0 .71-.169 1.38-.47 1.972l.011-.025c-.777 1.586-2.379 2.658-4.231 2.658-.068 0-.135-.001-.202-.004h.01c-1.137-.024-2.21-.274-3.183-.707l.052.021c-.379.316-1.011.836-1.47 1.153 1.214.596 2.638.959 4.143.994h.012c.059.002.128.003.197.003 2.552 0 4.787-1.355 6.026-3.384l.018-.031c.342-.811.54-1.753.54-2.742 0-1.98-.796-3.774-2.085-5.079l.001.001-.015.032z"></path><path d="m6.844 17.316c.044.964.833 1.731 1.803 1.738h.064c.968-.033 1.741-.827 1.741-1.8 0-.99-.799-1.794-1.788-1.801h-.067c-.01-.001-.022-.001-.033-.001-.073 0-.143.011-.209.033l.005-.001c-1.07-1.741-1.703-3.85-1.703-6.107 0-.364.016-.724.049-1.079l-.003.046c.091-1.906.791-3.633 1.907-5.007l-.012.016c.991-1.071 2.387-1.753 3.944-1.803h.009c3.412-.064 4.835 4.188 4.945 5.878l1.582.473c-.368-5.181-3.59-7.901-6.671-7.901-3.132.163-5.731 2.27-6.622 5.131l-.014.052c-.438 1.262-.692 2.716-.692 4.229 0 2.588.741 5.003 2.021 7.044l-.032-.055c-.143.216-.228.481-.228.766 0 .053.003.105.009.156l-.001-.006z"></path></g></svg>
   },
   {
-    id: 16,
+    id: 17,
     title: "Figma",
     tags: ["Movie App", "Weather App", "My Portfolio Website", "CreateIT", "BrainlySolution", "ContentBuilder"],
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M16 16C16 13.7909 17.7909 12 20 12C22.2091 12 24 13.7909 24 16C24 18.2091 22.2091 20 20 20C17.7909 20 16 18.2091 16 16Z" fill="#1ABCFE"></path> <path fillRule="evenodd" clipRule="evenodd" d="M8 24C8 21.7909 9.79086 20 12 20H16V24C16 26.2091 14.2091 28 12 28C9.79086 28 8 26.2091 8 24Z" fill="#0ACF83"></path> <path fillRule="evenodd" clipRule="evenodd" d="M16 4V12H20C22.2091 12 24 10.2091 24 8C24 5.79086 22.2091 4 20 4H16Z" fill="#FF7262"></path> <path fillRule="evenodd" clipRule="evenodd" d="M8 8C8 10.2091 9.79086 12 12 12H16V4H12C9.79086 4 8 5.79086 8 8Z" fill="#F24E1E"></path> <path fillRule="evenodd" clipRule="evenodd" d="M8 16C8 18.2091 9.79086 20 12 20H16V12H12C9.79086 12 8 13.7909 8 16Z" fill="#A259FF"></path> </g></svg>
   },
   {
-    id: 17,
+    id: 18,
     title: "ClickUp",
     tags: ["ContentBuilder"],
     icon: <svg fill="#000000" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m2 18.439 3.69-2.828c1.961 2.56 4.044 3.739 6.363 3.739 2.307 0 4.33-1.166 6.203-3.704L22 18.405C19.298 22.065 15.941 24 12.053 24 8.178 24 4.788 22.078 2 18.439zM12.04 6.15l-6.568 5.66-3.036-3.52L12.055 0l9.543 8.296-3.05 3.509z"></path></g></svg>
   },
   {
-    id: 18,
+    id: 19,
     title: "Notion",
     tags: ["ContentBuilder"],
     icon: <svg fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.948 5.609c0.99 0.807 1.365 0.75 3.234 0.625l17.62-1.057c0.375 0 0.063-0.375-0.063-0.438l-2.927-2.115c-0.557-0.438-1.307-0.932-2.74-0.813l-17.057 1.25c-0.625 0.057-0.75 0.37-0.5 0.62zM7.005 9.719v18.536c0 0.995 0.495 1.37 1.615 1.307l19.365-1.12c1.12-0.063 1.25-0.745 1.25-1.557v-18.411c0-0.813-0.313-1.245-1-1.182l-20.234 1.182c-0.75 0.063-0.995 0.432-0.995 1.24zM26.12 10.708c0.125 0.563 0 1.12-0.563 1.188l-0.932 0.188v13.682c-0.813 0.438-1.557 0.688-2.177 0.688-1 0-1.25-0.313-1.995-1.245l-6.104-9.583v9.271l1.932 0.438c0 0 0 1.12-1.557 1.12l-4.297 0.25c-0.125-0.25 0-0.875 0.438-0.995l1.12-0.313v-12.255l-1.557-0.125c-0.125-0.563 0.188-1.37 1.057-1.432l4.609-0.313 6.354 9.708v-8.589l-1.62-0.188c-0.125-0.682 0.37-1.182 0.995-1.24zM2.583 1.38l17.745-1.307c2.177-0.188 2.74-0.063 4.109 0.932l5.667 3.984c0.932 0.682 1.245 0.87 1.245 1.615v21.839c0 1.37-0.5 2.177-2.24 2.302l-20.615 1.245c-1.302 0.063-1.927-0.125-2.615-0.995l-4.172-5.417c-0.745-0.995-1.057-1.74-1.057-2.609v-19.411c0-1.12 0.5-2.052 1.932-2.177z"></path> </g></svg>
   },
   {
-    id: 19,
+    id: 20,
     title: "AI tools (Cursor)",
     tags: ["ContentBuilder"],
     icon: <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" fillRule="evenodd" viewBox="0 0 24 24"><title>Cursor</title><path d="M22.106 5.68L12.5.135a.998.998 0 00-.998 0L1.893 5.68a.84.84 0 00-.419.726v11.186c0 .3.16.577.42.727l9.607 5.547a.999.999 0 00.998 0l9.608-5.547a.84.84 0 00.42-.727V6.407a.84.84 0 00-.42-.726zm-.603 1.176L12.228 22.92c-.063.108-.228.064-.228-.061V12.34a.59.59 0 00-.295-.51l-9.11-5.26c-.107-.062-.063-.228.062-.228h18.55c.264 0 .428.286.296.514z"/></svg>
   },
   {
-    id: 20,
+    id: 21,
     title: "Resend",
     tags: ["My Portfolio Website"],
     icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1800" fill="none"><path d="M1000.46 450C1174.77 450 1278.43 553.669 1278.43 691.282C1278.43 828.896 1174.77 932.563 1000.46 932.563H912.382L1350 1350H1040.82L707.794 1033.48C683.944 1011.47 672.936 985.781 672.935 963.765C672.935 932.572 694.959 905.049 737.161 893.122L908.712 847.244C973.85 829.812 1018.81 779.353 1018.81 713.298C1018.8 632.567 952.745 585.78 871.095 585.78H450V450H1000.46Z" fill="black"/></svg>
@@ -197,8 +202,8 @@ export default function SkillsPage() {
                     {skill?.tags?.map((tag, index) => (
                       <div key={index} className="skills-container__toolbox-tag-box">
                         <a className="skills-container__toolbox-tag-link" href={tagsUrls.find((url) => url.tag === tag)?.url} target="_blank" rel="noopener noreferrer">
-                          {tag}
-                        </a>
+                          <span>{tag}</span> <ExternalLink width={11} />
+                        </a> 
                       </div>
                     ))}
                   </div>
