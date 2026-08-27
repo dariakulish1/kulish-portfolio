@@ -200,7 +200,7 @@ export default function ContactsPage() {
                                     }} 
                                     className="contacts-container__contact-info-btn">{!isMobile && <span>{contact.buttonText}</span>}<Copy size={15} /></button>
                                 :
-                                <a href={contact.socialMedia === "GitHub" ? "https://github.com/dariakulish1" : "https://www.linkedin.com/in/daria-kulish-5a4a66257/"} className="contacts-container__contact-info-btn">
+                                <a target="_blank" rel="noopener noreferrer" href={contact.socialMedia === "GitHub" ? "https://github.com/dariakulish1" : "https://www.linkedin.com/in/daria-kulish-5a4a66257/"} className="contacts-container__contact-info-btn">
                                     {!isMobile && <span>{contact.buttonText}</span>}
                                     <ExternalLink size={15} />
                                 </a>}

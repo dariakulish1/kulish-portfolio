@@ -265,12 +265,13 @@ export default function CommercialProjectsPage() {
                 </div>} />
                   <DialogContent className="p-8">
                     <DialogHeader>
-                        <DialogTitle><a href="https://next-project-t1v3.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#C7DEF6] font-bold text-xl underline flex flex-row mb-5">CreateIT <SquareArrowOutUpRight width={15} className="ml-1 mt-0.5" /></a></DialogTitle>
-                        <DialogDescription>
-                            <a className="commercial-container__pet-project-view-btn mb-5" href="https://github.com/dariakulish1/next-project">View on GitHub</a>
+                        <DialogTitle><a href="https://next-project-t1v3.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#C7DEF6] font-bold text-xl underline flex flex-row mb-1">CreateIT <SquareArrowOutUpRight width={15} className="ml-1 mt-0.5" /></a></DialogTitle>
+                        <DialogDescription className="flex flex-col items-start justify-start gap-2">
+                            <span>Web application where users can register, log in, and create blog posts.</span>
+                            <a target="_blank" rel="noopener noreferrer" className="commercial-container__pet-project-view-btn" href="https://github.com/dariakulish1/next-project">View on GitHub</a>
                         </DialogDescription>
                     </DialogHeader>
-                    <div className="commercial-container__platform-img-content -mx-4 no-scrollbar max-h-[50vh] overflow-y-auto px-4">
+                    <div className="commercial-container__platform-img-content -mx-4 no-scrollbar max-h-[50vh] overflow-y-auto px-4 mt-2">
                         <ImageGallery
                             ref={galleryRef}
                             items={images3}

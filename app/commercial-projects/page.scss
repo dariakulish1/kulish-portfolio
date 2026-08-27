@@ -67,6 +67,11 @@
         border: 1px solid white;
         border-radius: 8px;
         text-decoration: none;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background: #3b3b3b;
+        }
     }
     @media (max-width: 767px) {
         margin: 15px 35px;
